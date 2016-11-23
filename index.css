@@ -3,7 +3,49 @@ html {
     font-size: 40px;
 }
 
-img {
-    border-radius: 10px;
-    border: 1px solid #ccc
+body, html{
+    
+    height: 100%;
+    width: 100%;
+    padding: none !important;
+    margin: none !important;
+
+    text-align: center;
+    position: relative;
+
 }
+
+.main_container{
+    
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%); 
+}
+
+img {
+
+    max-width: 200px;
+    border-radius: 1000px;
+    border: 3px solid #ccc;
+    transition: all 1s ease;
+
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+
+    -moz-transform: rotate(-180deg) scaleY(-1) scaleX(-1);
+    -o-transform: rotate(-180deg) scaleY(-1) scaleX(-1);
+    -webkit-transform: rotate(-180deg) scaleY(-1) scaleX(-1);
+
+}
+
+img:hover{
+
+    -moz-transform: rotate(180deg) scaleY(-1) scaleX(-1);
+    -o-transform: rotate(180deg) scaleY(-1) scaleX(-1);
+    -webkit-transform: rotate(180deg) scaleY(-1) scaleX(-1);
+
+}
+
+
