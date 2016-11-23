@@ -82,8 +82,16 @@ a, a:hover, a:visited, a:active, a:focus {
     color: #3B5998;
 }
 
+#social a i#youtube-icon:hover{
+    color: #cd201f;
+}
+
 #social a i#email-icon:hover{
     color: #e7ba52;
+}
+
+#social a i#instagram-icon:hover{
+    color: #c13584;
 }
 
 #social a i#linkedin-icon:hover{
