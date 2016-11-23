@@ -7,8 +7,8 @@ body, html{
     
     height: 100%;
     width: 100%;
-    padding: none !important;
-    margin: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
 
     text-align: center;
     position: relative;
@@ -27,7 +27,7 @@ img {
 
     max-width: 200px;
     border-radius: 1000px;
-    border: 3px solid #ccc;
+    border: 3px solid #000;
     transition: all 1s ease;
 
     -moz-transition: all 1s ease;
@@ -48,4 +48,44 @@ img:hover{
 
 }
 
+a, a:hover, a:visited, a:active, a:focus {
+    color:inherit;
+    text-decoration: none;
+}
 
+#social a{
+
+    margin: 4px;
+    cursor: auto;
+
+}
+
+#social a i{
+
+   transition: color 1s ease;
+   -moz-transition: color 1s ease;
+   -o-transition: color 1s ease;
+   -webkit-transition: color 1s ease;
+
+}
+
+#social a i:hover{
+    cursor: pointer;
+    
+    transform: scale(1.2,1.2);
+    -moz-transform: scale(1.2,1.2);
+    -o-transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+}
+
+#social a i#facebook-icon:hover{
+    color: #3B5998;
+}
+
+#social a i#email-icon:hover{
+    color: #e7ba52;
+}
+
+#social a i#linkedin-icon:hover{
+    color: #0077B5;
+}
