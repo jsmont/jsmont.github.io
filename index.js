@@ -36,9 +36,11 @@ function initRandomStuff(){
                 player.playVideo();
 				setTimeout(function(){
                     $("#youtube-background").removeClass("playing");
+                },30*1000);
+				setTimeout(function(){
 					player.pauseVideo();
 					player.seekTo(0,true);
-                },30*1000);
+                },32*1000);
             }
         }
 
