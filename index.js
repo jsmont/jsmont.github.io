@@ -5,8 +5,8 @@ $(document).ready(function(){
 });
 
 function initAnimationEvents(){
-
-    $("#profile-pic").mouseenter(function(){
+    
+    function roll(){
 
         var that  = this;
         if(!$(this).hasClass("spin")){
@@ -19,6 +19,9 @@ function initAnimationEvents(){
             }, 1000);
         }
 
-    });
+    }
+    
+    $("#profile-pic").mouseenter(roll);
+    $("#profile-pic").click(roll);
 
 }
