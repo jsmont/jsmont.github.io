@@ -23,7 +23,7 @@ body, html{
      transform: translate(-50%, -50%); 
 }
 
-img {
+#profile-pic {
 
     max-width: 200px;
     border-radius: 1000px;
@@ -40,12 +40,30 @@ img {
 
 }
 
-img:hover{
+#profile-pic:hover{
 
     -moz-transform: rotate(180deg) scaleY(-1) scaleX(-1);
     -o-transform: rotate(180deg) scaleY(-1) scaleX(-1);
     -webkit-transform: rotate(180deg) scaleY(-1) scaleX(-1);
 
+}
+
+#hp-pic{
+    max-height: 25px;
+    filter: grayscale(100%) brightness(0%);
+
+   transition: color 1s ease;
+   -moz-transition: color 1s ease;
+   -o-transition: color 1s ease;
+   -webkit-transition: color 1s ease;
+}
+
+#hp-pic:hover{
+    transform: scale(1.2,1.2);
+    -moz-transform: scale(1.2,1.2);
+    -o-transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+    filter: none;
 }
 
 a, a:hover, a:visited, a:active, a:focus {
