@@ -82,6 +82,10 @@ a, a:hover, a:visited, a:active, a:focus {
     color: #3B5998;
 }
 
+#social a i#github-icon:hover{
+    color: #aaa;
+}
+
 #social a i#youtube-icon:hover{
     color: #cd201f;
 }
