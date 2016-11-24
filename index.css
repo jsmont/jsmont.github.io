@@ -28,23 +28,23 @@ body, html{
     max-width: 200px;
     border-radius: 1000px;
     border: 3px solid #000;
+    -moz-transform: rotate(0deg); // scaleY(-1) scaleX(-1);
+    -o-transform: rotate(0deg); // scaleY(-1) scaleX(-1);
+    -webkit-transform: rotate(0deg); // scaleY(-1) scaleX(-1);
+
+}
+
+#profile-pic.spin{
     transition: all 1s ease;
 
     -moz-transition: all 1s ease;
     -webkit-transition: all 1s ease;
     -o-transition: all 1s ease;
 
-    -moz-transform: rotate(-180deg) scaleY(-1) scaleX(-1);
-    -o-transform: rotate(-180deg) scaleY(-1) scaleX(-1);
-    -webkit-transform: rotate(-180deg) scaleY(-1) scaleX(-1);
 
-}
-
-#profile-pic:hover{
-
-    -moz-transform: rotate(180deg) scaleY(-1) scaleX(-1);
-    -o-transform: rotate(180deg) scaleY(-1) scaleX(-1);
-    -webkit-transform: rotate(180deg) scaleY(-1) scaleX(-1);
+    -moz-transform: rotate(360deg); // scaleY(-1) scaleX(-1);
+    -o-transform: rotate(360deg); //scaleY(-1) scaleX(-1);
+    -webkit-transform: rotate(360deg); // scaleY(-1) scaleX(-1);
 
 }
 
