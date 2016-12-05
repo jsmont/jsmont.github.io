@@ -2,6 +2,15 @@ $(document).ready(function(){
 
     initAnimationEvents();
     initRandomStuff();
+    initMenu();
+    function animate(){
+
+        if($("#main_container").hasClass("sidebar"))
+            $("#main_container").removeClass("sidebar");
+        else $("#main_container").addClass("sidebar");
+    }
+
+    //setInterval(animate, 5000);
 });
 
 function initAnimationEvents(){
@@ -21,8 +30,8 @@ function initAnimationEvents(){
 
     }
     
-    $("#profile-pic").mouseenter(roll);
-    $("#profile-pic").click(roll);
+    $(".profile-pic").mouseenter(roll);
+    $(".profile-pic").click(roll);
 
 }
 
@@ -44,6 +53,22 @@ function initRandomStuff(){
                 },32*1000);
             }
         }
+
+    });
+
+}
+
+function initMenu(){
+
+    $(".more_info").click(function(){
+
+        $("#main_container").addClass("sidebar");
+
+    });
+
+    $(".home").click(function(){
+
+        $("#main_container").removeClass("sidebar");
 
     });
 
