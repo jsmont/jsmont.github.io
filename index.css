@@ -48,6 +48,10 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  transition: background-color 1s ease;
+  -moz-transition: background-color 1s ease;
+  -o-transition: background-color 1s ease;
+  -webkit-transition: background-color 1s ease;
 }
 #main_container .personal_data {
   position: absolute;
@@ -202,6 +206,9 @@ body {
   right: 0;
   background-color: rgba(0, 0, 0, 0.75);
 }
+#main_container.sidebar {
+  background-color: rgba(0, 0, 0, 0.4);
+}
 #main_container.sidebar .personal_data {
   top: 0;
   left: 0;
@@ -245,10 +252,10 @@ body {
 }
 #youtube-background {
   opacity: 0;
-  transition: opacity 2s ease-in;
-  -moz-transition: opacity 2s ease-in;
-  -o-transition: opacity 2s ease-in;
-  -webkit-transition: opacity 2s ease-in;
+  transition: opacity 1s ease-in;
+  -moz-transition: opacity 1s ease-in;
+  -o-transition: opacity 1s ease-in;
+  -webkit-transition: opacity 1s ease-in;
 }
 #youtube-background.playing {
   opacity: 1;
